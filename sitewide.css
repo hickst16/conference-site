@@ -1,0 +1,311 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: 'Patua One', cursive;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: black;
+	background-color: white;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area. 
+	If you have more than one container, you are probably doing
+	something wrong. 	
+*/
+.container {
+	margin-top: 1em;
+	margin-right: auto;
+	margin-bottom: 1em;
+	margin-left: auto;
+	width: 100%;
+	max-width: auto;
+	padding: 2em;
+	border: 5px solid white;
+	text-align: center;
+}
+
+#mainpic h1
+{
+position:absolute;
+text-align:right;
+font-size:50px;
+color:#FFF;	
+left:550px;
+top:300px;
+}
+
+#mainpic h2
+{
+position:absolute;
+text-align:right;
+font-size:20px;
+color: #FFF;	
+left:550px;
+top:350px;
+}
+
+#mainpic h3
+{
+position:absolute;
+text-align:right;
+font-size:25px;
+color:#FFF;	
+left:1000px;
+top:700px;
+}
+
+#mainpic h4
+{
+position:absolute;
+text-align:right;
+font-size:20px;
+color:#FFF;	
+left:1000px;
+top:730px;
+}
+
+#mainpic
+{
+background-image:url(../img/StudioTheater.jpg);
+background-repeat:no-repeat;
+object-fit: scale-down;
+width: auto;
+height: 760px;
+background-position: center;
+}
+
+#mappic
+{
+background-image:url(../img/mappic.png);
+background-repeat:no-repeat;
+object-fit: scale-down;
+width: auto;
+height: 760px;
+background-position: center;
+top: 0;
+}
+
+.navbar {
+    background-color: white;
+    overflow: hidden;
+    width: auto;
+    height: 50px;
+}
+
+.navbar a {
+    float: left;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #153FB5;
+    color: white;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    right: 0; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: black; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #f1f1f1; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    bottom: 0;
+}
+
+#myBtn:hover {
+    background-color: #FF0000; /* Add a dark-grey background on hover */
+    color: white;
+}
+
+.container2 {
+	margin-right: auto;
+	margin-bottom: 1em;
+	margin-left: auto;
+	width: 100%;
+	max-width: auto;
+	padding: 2em;
+	border: 5px solid #153FB5;
+	text-align: right;
+	background-color: #153FB5;
+}
+
+.container3 {
+	margin-top: 1em;
+	margin-right: auto;
+	margin-bottom: 1em;
+	margin-left: auto;
+	width: 100%;
+	max-width: auto;
+	padding: 2em;
+	border: 5px solid #FFA500;
+    background-color: #FFA500;
+	text-align: left;
+}
+
+.container4 {
+    margin-top: 1em;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-left: auto;
+    width: 90%;
+    max-width: 1200px;
+    padding: 2em;
+    border: 5px solid white;
+    text-align: center;
+}
+
+.container5 {
+    margin-top: 1em;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-left: auto;
+    width: 90%;
+    max-width: 1200px;
+    padding: 2em;
+    border: 5px solid white;
+    text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.gallery {
+    margin: 10px;
+    border: 0.01px solid red;
+    background-color: red;
+    height: auto;
+}
+
+div.gallery2 {
+    margin: 30px;
+    border: 0.01px solid red;
+    background-color: red;
+    height: auto;
+}
+
+div.desc2 {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.padding {
+    padding-bottom: 200px
+    padding-right: 40px;
+}
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+#RegBtn {
+  background-color: #153FB5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+#RegBtn:hover {
+  opacity:1;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.containerreg {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
